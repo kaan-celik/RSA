@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "rsa.h"
 #include <cstring>
-#include<time.h>
 
 using namespace std;
 
