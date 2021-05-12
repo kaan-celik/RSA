@@ -88,9 +88,9 @@ void RSA_Encryption(mpz_t ciphertext, mpz_t plaintext,PublicKey* pubkey)
 		
 }
 
-void RSA_Encode(mpz_t encode, unsigned char encoded_array[])
+void RSA_Encode(mpz_t encode, unsigned char encode_array[])
 {
-	mpz_export(encoded_array, NULL, 1, sizeof(encoded_array[0]), 0, 0, encode);
+	mpz_export(encode_array, NULL, 1, sizeof(encode_array[0]), 0, 0, encode);
 }
 
 void RSA_Decryption(mpz_t message,  mpz_t ciphertext, PrivateKey* privkey, PublicKey* pubkey)
