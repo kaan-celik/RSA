@@ -84,8 +84,7 @@ void RSA_Decode(mpz_t decode,  unsigned char decode_array[])
 
 void RSA_Encryption(mpz_t ciphertext, mpz_t plaintext,PublicKey* pubkey)
 {
-	mpz_powm(ciphertext, plaintext, pubkey->e, pubkey->n);
-		
+	mpz_powm(ciphertext, plaintext, pubkey->e, pubkey->n);		
 }
 
 void RSA_Encode(mpz_t encode, unsigned char encode_array[])
