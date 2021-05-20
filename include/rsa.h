@@ -5,7 +5,7 @@
 #define RSA_LENGTH 1024
 
 
-static unsigned long seed = 311;
+static unsigned long seed = 311;   //Any positive integer would be OK.
 
 typedef struct
 {
